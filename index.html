@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -17,15 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="苏北的产品知识库">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="苏北的产品知识库">
+<meta property="og:description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="苏北">
+<meta property="article:tag" content="交互设计,交互设计是什么,交互设计作品集,产品经理,人人都是产品经理,互联网产品经理,产品经理职责,UE设计,用户体验设计,知识库,原型设计,需求分析,区块链,区块链,区块链技术,区块链是什么,">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/">
@@ -37,11 +40,11 @@
     sidebar: "",
     isHome : true,
     isPost : false,
-    lang   : 'en'
+    lang   : 'zh-CN'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>苏北的产品知识库</title>
   
 
 
@@ -81,7 +84,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -92,9 +95,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">苏北的产品知识库</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">终身学习，持续输出</p>
   </div>
 
   <div class="site-nav-right">
@@ -110,12 +114,37 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
 
   </li>
   </ul>
@@ -144,22 +173,22 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/29/hello-world/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/29/%E8%8B%8F%E5%8C%97%E7%9A%84%E4%BA%A7%E5%93%81%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="苏北的产品知识库">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/29/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2023/12/29/%E8%8B%8F%E5%8C%97%E7%9A%84%E4%BA%A7%E5%93%81%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" class="post-title-link" itemprop="url">苏北的产品知识体系</a>
         </h2>
 
         <div class="post-meta">
@@ -167,9 +196,9 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2023-12-29 15:49:05" itemprop="dateCreated datePublished" datetime="2023-12-29T15:49:05+08:00">2023-12-29</time>
+              <time title="创建时间：2023-12-29 22:08:55" itemprop="dateCreated datePublished" datetime="2023-12-29T22:08:55+08:00">2023-12-29</time>
             </span>
 
           
@@ -183,19 +212,524 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          
+      
+    </div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/10/%E4%BA%A7%E5%93%81/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%8646%E4%B8%AA%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD/">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/10/%E4%BA%A7%E5%93%81/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%8646%E4%B8%AA%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-10 10:17:38" itemprop="dateCreated datePublished" datetime="2022-03-10T10:17:38+08:00">2022-03-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="关于产品经理46个专业术语"><a href="#关于产品经理46个专业术语" class="headerlink" title="关于产品经理46个专业术语"></a>关于产品经理46个专业术语</h1><h2 id="第一篇：产品经理相关术语"><a href="#第一篇：产品经理相关术语" class="headerlink" title="第一篇：产品经理相关术语"></a>第一篇：产品经理相关术语</h2><p>1、BRD：Business Requirement Document 商业需求文档，回答的是产品价值是什么？也就是这个产品解决了什么问题。<br>受众是：老板，投资人，股东，目的是让他们知道这个产品如何给公司盈利；侧重点是需求描述，盈利模式。<br>2、MRD：Market Requirements Document 市场需求文档，回答的是市场上有哪些同类竞品（竞争格局）、为什么我们公司是适合做这个产品的（竞争优势），我们产品成功的机会多大？（市场机会）<br>这个文档的受众是：老板、运营、市场销售，主要是让运营和销售知道相对于竞品，产品的优势是什么，更好的向用户介绍产品有点；写作侧重点在竞品情况以及能为用户带来什么便利。<br>3、PRD：Product Requirement Document 产品需求文档，回答的问题是我们产品方案是什么，也就是这个产品的具体细节。<br>受众是开发人员，目的是让开发知道如何把需求按照产品经理的思路开发；侧重点是需求描述、需求逻辑、需求原型。<br>4、B2C：企业对个人，平台的一端为商家一端为普通用户，比如京东和天猫<br>5、B2B：企业对企业，平台交易的双方都是商家，比如阿里巴巴<br>6、C2C：个人对个人，平台交易的双方都是普通用户，比如淘宝、咸鱼、转转</p>
+<h2 id="第二篇：广告相关的术语"><a href="#第二篇：广告相关的术语" class="headerlink" title="第二篇：广告相关的术语"></a>第二篇：广告相关的术语</h2><p>1、搜索广告：最典型就是百度的竞价广告。商家竞价购买关键词，当用户搜索的内容触发关键词时，在搜索列表展示对应的广告。<br>2、展示类广告：信息类网站中的 Banner、竖边、通栏等广告位都属于展示广告。比如微信公众号底部图片广告<br>3、开屏广告：大部分 app 启动之后会有看到一副全屏广告，展示时间 3-5 秒不等。比如知乎、豆瓣、小红书等等<br>4、信息流广告：以文章、图片、视频等形式插入在信息列表中的广告，常见于内容类的产品，比如手机百度、知乎、今日头条等 app 中经常出现的并标识了” 广告” 字眼的信息<br>5、视频广告：在爱奇艺、优酷、腾讯视频等视频网站，当我们没有购买会员时视频播放前、播放过程中以及暂停过程中都是出现的广告形式。<br>6、SEM：(Search Engine Marketing): 翻译为搜索引擎营销，就是根据用户使用 搜索引擎 的方式利用用户检索信息的机会尽可能将 营销 信息传递给目标用户。是搜索引擎中竞价排名的优化，也就是 SEM 是需要花钱的。<br>比如同我搜索华为手机，这些华为官网的广告就是 SEM。就是当用户搜索华为手机关键词的时候，华为官网要想排在前几位是需要给百度钱的。<br>7、SEO: （Search Engine Optimization）：汉译为 搜索引擎 优化。是一种方式：利用 搜索引擎 的规则提高 网站 在有关搜索引擎内的 自然排名 ，也就是 SEO 是免费的。<br>同样的搜索华为手机，后面的几个没有写 “广告” 字眼的就是搜索引擎的自然排名，是不需要花钱的，但是可以通过一定的手段优化排名，也就是我们常说的 SEO 优化。<br>常见的广告计费模式：<br>1、CPM（Cost Per Thousand Impression，按千次展示收费）：只要曝光就收费，不管点击、下载或注册等后续流程, 此种类型适合想要扩大知名度做品牌广告的广告主。早期门户网站的展示类广告以及开屏广告一般都采用这种模式。<br>2、CPC（Cost Per Click，按点击收费）：在这种计费模式下，不管展示了多少次，只要用户不产生点击，广告主是不需要付费的，只有用户点击时才开始计费。这种形式是对广告主比较友好的方法，因为首先加大了媒介作弊的难度，其次可以检测每个平台的流量质量。目前这种形式常见于竞价排名广告以及信息流广告。<br>3、CPA（Cost Per Action，按用户行动收费）：A 是指 Action 行动的意思，具体的用户行动内容是多种多样的，可以是下载（Download）、安装（Install）、购买（Sales）、注册等等形式，具体是指哪种行动需要在广告洽谈的时候，广告主和流量主协商好，只有用户产生了协商好的行动，广告主才付费。<br>所以可以看到 CPD（Cost Per Download）、CPI（Cost Per Install）、CPS（Cost Per Sales），这种形式适合 app 下载、增加新用户等需要明确转化动作的广告主。<br>相对来说，CPM 的形式适合以宣传品牌为主的广告主，属于品牌广告；CPC 和 CPA 是效果广告，倾向于保护广告主的利益。</p>
+<h2 id="第三篇：运营相关专业术语"><a href="#第三篇：运营相关专业术语" class="headerlink" title="第三篇：运营相关专业术语"></a>第三篇：运营相关专业术语</h2><p>1、AARRR 模型：Acquisition、Activation、Retention、Revenue、Refer 这个五个单词的缩写，分别对应这一款移动应用生命周期中的 5 个重要环节。分别为：获取用户、提高活跃度、提高留存率、获取收入、自传播。<br>2、RFM 用户模型：R(Recency) 表示客户最近一次购买的时间有多远，F(Frequency) 表示客户在最近一段时间内购买的次数，M (Monetary) 表示客户在最近一段时间内购买的金额。<br>3、用户增长的 S 型曲线、J 型曲线：指大多数产品，在产品发展周期中，都会遵循 S 型曲线的增长方式；但有些产品，可能产生 J 型曲线。<br>4、拉新：获取新用户，就是让一个从未使用过产品的人，开始使用我们的产品<br>5、留存：让用户留在平台。用户使用过一次产品之后，要让他们持续的使用产品。<br>6、促活：让用户活跃起来。让用户在平台上多生产内容，多消费内容。比如社区类产品就需要不断的通过运营手段促进用户活跃。</p>
+<h2 id="第四篇：数据分析相关"><a href="#第四篇：数据分析相关" class="headerlink" title="第四篇：数据分析相关"></a>第四篇：数据分析相关</h2><p>1、PV：页面访问量，同一个账号访问同一个页面两次，PV 算 2 次<br>2、UV：页面访问人数，同一个账号访问同一个页面两次，UV 算 1 次<br>3、DAU：也叫做日活，是指一天内打开 app 的用户数，所以 DAU 算的是 UV<br>4、MAU：也叫做月活，是指一个月内打开 app 的用户数，所以 MAU 也是指 UV<br>5、留存率：新增用户中，后面几天还来的比例。<br>6、次日留存：比如今日新增 10 名用户，这 10 名用户中 7 名明天又打开了 app，则次日留存率 70%<br>7、7 日留存率：比如今日新增 10 名用户，这 10 名用户中 3 名注册后第 7 天又打开了 app，则 7 日留存率 30%<br>8、获客渠道：获取新用户的渠道。比如你是通过这篇知乎回答关注了我的公众号：薛老板产品派，那知乎就是我公众号的一个获客渠道。</p>
+<h2 id="第五篇：技术相关的术语"><a href="#第五篇：技术相关的术语" class="headerlink" title="第五篇：技术相关的术语"></a>第五篇：技术相关的术语</h2><p>1、接口：可以简单理解为数据传输的通道，比如客户端和服务端之间的信息传输就是通过接口。<br>2、通信：就是只信息传输这个操作，比如客户端和服务端之间的通信<br>3、上报：一般是指上报服务端，也就是数据从客户端流向（上报）到服务端<br>4、拉取：是指用户打开 app 之后，客户端向服务端请求数据的过程。<br>5、并发量：有多少用户在同时使用产品，请求数据。<br>6、丢包：数据在上报过程中，由于网络异常导致的数据丢失。<br>7、上线：功能测试没问题之后，研发打包发布到各大应用市场及 app store，供用户使用。</p>
+<h2 id="第六篇：测试相关的术语"><a href="#第六篇：测试相关的术语" class="headerlink" title="第六篇：测试相关的术语"></a>第六篇：测试相关的术语</h2><p>1、提测：就是研发开发完之后，打包提交给测试人员开始测试。<br>2、复现： 之前测试发现的 bug，再次出现<br>3、测试用例：测试人员根据产品经理的 PRD 撰写的测试流程及事项<br>4、功能测试：单一功能的测试，比如本迭代要做一个分享功能，功能测试是只测试分享功能是否符合产品要求<br>5、回归测试：可以理解为整体测试。本迭代要上线一个分享功能，要测试一下这个功能有没有影响其他功能的正常使用<br>6、测试报告：测试完成之后，测试人员撰写的说明 BUG 均已修复，可以上线的邮件。</p>
+<h2 id="第七篇：项目相关的术语"><a href="#第七篇：项目相关的术语" class="headerlink" title="第七篇：项目相关的术语"></a>第七篇：项目相关的术语</h2><p>1、项目排期表：为了保证项目按时上线，会使用项目排期表定好每个参与方的具体工作内容，以及起止时间。<br>2、敏捷开发：把产品功能拆解，每次只设计和实现这个产品的一部分，然后一步一步完整整个产品 &#x2F; 功能的方式叫做敏捷开发。<br>3、需求评审：由项目经理组织产品经理、研发、测试、UI 听产品经理讲解需求的过程。<br>1）互联网行业必懂的常识：<br>PM：产品经理（Product Manager)，部分公司指项目经理（Project Manager)<br>UI：UI 设计师<br>UE：交互设计师<br>UX：用户体验设计师<br>RD：研发<br>QA：测试<br>IM：即时通信类，如 QQ、微信<br>SNS：社交类，如微博，facebook, instegram<br>B2B: 企业对企业<br>B2C：企业对个人，即商对客<br>C2C：个人对个人<br>O2O：Online to offline, 线下商务与线上相结合<br>IAAS：Insfrastructure as a service 基础设施即服务，如阿里云<br>SAAS：software as a servise, 软件即服务，如小鹅通<br>PAAS：platform as a service, 平台即服务，如 Whatsapp<br>PV：页面访问量<br>UV：用户访问量<br>DAU：日活，即每天访问的用户数，需排重<br>WAU: 周活，即每周访问的用户数<br>MAU：月活，即每月访问的用户数<br>2) 产品经理必懂的产品术语：<br>web 端：也叫网站端或网页端<br>PC 端：同 web 差不多，多包括桌面客户端（也叫 PC 客户端）<br>APP 端：也叫无线端或手机端<br>工单：提供系统化、标准化的工作处理流程，一个工单由多个角色完成<br>痛点：用户迫切需要满足的需求<br>权重：某一指标在整体评价中的重要程度，产品设计中可以加权或降权<br>闭环：从用户使用产品到需求得到满足，所有业务、功能逻辑都是完整的<br>生命周期：产品从设计研发、推广到维护的完整周期<br>适配：同一个产品在不同机型的兼容性<br>GET，POST，PUT，DELETE：对服务器资源的查，改，增，删<br>重定向：通过各种方法将各种网络请求重新定向转到其它位置<br>状态码：Web 服务器的响应状态（1 开头：被接受，需要继续处理。 2 开头 ：请求成功<br>3 开头：请求被重定向。 4 开头：请求错误。5 开头：服务器错误）<br>刷新：将页面数据置为最新数据<br>缓存：将程序或系统经常要调用的对象存在内存中，使用时可以快速调用<br>GMT：格林尼治时间<br>SEO：搜索引擎中自然排名的优化<br>SEM：搜索引擎中竞价排名的优化<br>demo：演示文件<br>MVP：最小化可行性产品，即抓住产品本质，迅速推向市场<br>千人千面：通过智能推荐引擎实现，即猜你喜欢<br>需求优先级：P0-P7，序号越小，优先级越高<br>3）产品经理必懂的技术术语：<br>接口：不同服务器进行数据交互的通道<br>I&#x2F;O ：输入 &#x2F; 输入接口<br>API：网页常用接口格式<br>Json：传输数据的编码协议<br>TCP：网络传输协议<br>HTTP 劫持：HTTP 传输数据被第三方修改<br>IDE：集成开发环境，如 sublime vscode vim 等<br>SDK：客户端或对外的常用接口格式<br>CDN：内容分发系统，将源站内容缓存到离用户最新的节点<br>DNS：域名解析，将用户输入的内容转换成 IP 地址<br>CNAME 记录：别名，可以把一个域名解析到另一个域名<br>SLB：负载均衡，让多台服务器保持相同压力<br>Cookie：客户端记录信息<br>Session：服务端记录信息<br>Token：服务端返回给客户端的令牌，以便于客户端免密登录<br>前后端分离：页面和数据分开返回给请求方<br>互踢：同一平台，在不同设备，登录同一账号，先登录的账号被踢出<br>泛域名：在一个域名根之下的，所有未建立的子域名集合<br>回源 HOST: 源站所对应的主机站点<br>过滤参数：用户请求 URL 中？后的参数<br>请求：向另一端索要信息或数据，所以需先发起请求<br>丢包：通信数据包丢失<br>拉取：用户端向服务端获取数据的过程<br>并发：多个事件同时进行<br>进程：服务器中运行的程序<br>进程挂掉了：进程运行出错被系统终止<br>拉起进程：让系统执行指定程序<br>单点：只有一个服务，通常不安全<br>防盗链：检验客户端 URL 来验证其合法性<br>宕机：服务器死机<br>上报：数据从客户端上报到服务端<br>心跳：用户端每隔几秒上传一次数据，称为一次心跳<br>存量：某个时间段已有的数量<br>增量：某个时间段新增的数量<br>MVC&#x2F;MVP：程序框架设计模式<br>4）产品经理必懂的测试术语：<br>提测：提交测试，通过公司内部系统将需求提交给测试人员<br>复测：再次测试；<br>复现：再次呈现的 bug；<br>bug 的常见类型: 功能测试、兼容性测试、压力测试、偶发性 bug；<br>debug：修改 bug；<br>测试用例：测试人员编制的一组测试输入、执行条件以及预期结果的用例</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/17/%E4%BA%A7%E5%93%81/%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E5%B8%B8%E8%AF%B4%E7%9A%84C%20%E7%AB%AFB%20%E7%AB%AF%E6%98%AF%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/17/%E4%BA%A7%E5%93%81/%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E5%B8%B8%E8%AF%B4%E7%9A%84C%20%E7%AB%AFB%20%E7%AB%AF%E6%98%AF%E4%BB%80%E4%B9%88/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-12-17 09:43:23" itemprop="dateCreated datePublished" datetime="2021-12-17T09:43:23+08:00">2021-12-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="互联网公司常说的-“C-端”、”B-端”-术语及对比解释"><a href="#互联网公司常说的-“C-端”、”B-端”-术语及对比解释" class="headerlink" title="互联网公司常说的 “C 端”、”B 端” 术语及对比解释"></a>互联网公司常说的 “C 端”、”B 端” 术语及对比解释</h1><p>互联网领域从产品受众对象分为面向 C 端产品和 B 端产品，同时它们都对应两个不同的目标消费客群。<br>C 端产品的 C 指的是 Constomer，我们每天都在接触 C 端产品，比如微信、抖音、今日头条。</p>
+<p>B 端产品的 B 指的是 Business，作为职场人士通常会接触到 B 端产品，是企业为解决某一类经营问题而使用的系统型软件或平台，比如常见的 CRM、ERP、OA、elarning 系统。</p>
+<ol>
+<li>C 端产品</li>
+</ol>
+<p> 受众对象：个人用户（Customer），主要是终端消费者。<br> 承担任务：流量的获取和转换。C 端产品主要依靠解决个人用户的痛点来获取信任，使命就是获取大量的用户，只有这样，才能为后面的变现带来可能。<br> 使用场景：主要以日常生活为主，涵盖衣、食、住、行、买 等方方面面。使用时间为碎片时间，不固定。<br> 变现方式：通过内容、广告或者增殖服务变现，依靠的是规模经济。比如得到依靠的是内容付费，今日头条依靠的是广告付费，QQ 则依靠的是增殖服务。<br> 产品特点：只围绕一个核心功能进行设计，注重用户体验，每一个产品细节都需要用心设计。小到一个按钮或图标，大到一个页面布局。<br> 部署方式：客户端占主流。比如 APP、有道云笔记。<br> 依赖运营度：强依赖运营，直接决定这产品的生死。C 端产品解决的是个人的某个需求痛点，相关产品多如牛毛，同质化严重。所以用户的转移成本很低。产品上线后，需要运营持续的跟进，来服务好这些个人用户，否则用户很容易离开。</p>
+<ol start="2">
+<li>B 端产品</li>
+</ol>
+<p> 受众对象：企业或组织（Business）。虽然最终使用系统的依然是个人，但这里的个人已经被统一抽象为 “角色” 了。比如 CRM 系统的一个功能是为 “销售” 这个角色设计的。小王和小张都是销售，小王生活中可能是一个活泼 girl，喜欢上网、逛街、聊天。小张可能是一个宅男，喜欢打游戏、看书。但这些都不影响产品经理对于销售相关功能的设计。<br> 承担任务：解决企业或者组织某一经营问题，承担着为企业 &#x2F; 组织提高效率、降低成本、控制风险的作用。<br> 使用场景：主要是工作场景为主，时间固定，非工作时间用户不用。<br> 变现方式：通过解决企业的经营问题，间接提高企业收入（SaaS 系统除外，是可以直接带来收入的），比如 CRM 系统就是通过提高企业的协同效率，帮助销售们更好的了解客户，降低客户流失风险，从而提高企业的收入。<br> 产品特点：功能第一、体验第二。B 端产品首要是专注于业务流程、提高业务效能上，体验是其次的（但并不意味着可以放弃体验，基本的体验还是要保证的）。<br> 部署方式：B&#x2F;S 占主流，主要是系统性软件或平台，通过浏览器直接访问。<br> 依赖运营度：弱依赖，不决定生死。主要是企业内部员工使用，主要靠自顶向下的推行系统，不担心员工不用，只是用好与否的区分</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/17/%E4%BA%A7%E5%93%81/%E4%BA%92%E8%81%94%E7%BD%91%E4%BA%A7%E5%93%81%E7%AE%A1%E7%90%86-%E7%BE%8E%E5%9B%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/11/17/%E4%BA%A7%E5%93%81/%E4%BA%92%E8%81%94%E7%BD%91%E4%BA%A7%E5%93%81%E7%AE%A1%E7%90%86-%E7%BE%8E%E5%9B%A2/" class="post-title-link" itemprop="url">互联网产品管理课 美团王慧文（清华宣讲会）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-11-17 22:08:55" itemprop="dateCreated datePublished" datetime="2021-11-17T22:08:55+08:00">2021-11-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-29 22:19:24" itemprop="dateModified" datetime="2023-12-29T22:19:24+08:00">2023-12-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="互联网产品管理课-美团王慧文（清华宣讲会）"><a href="#互联网产品管理课-美团王慧文（清华宣讲会）" class="headerlink" title="互联网产品管理课 美团王慧文（清华宣讲会）"></a>互联网产品管理课 美团王慧文（清华宣讲会）</h1><h2 id="第一部分：成功和失败的产品"><a href="#第一部分：成功和失败的产品" class="headerlink" title="第一部分：成功和失败的产品"></a>第一部分：成功和失败的产品</h2><p>一般来说在一个领域里一款产品的成功对应着无数产品的失败，根据老王个<br>人的经验，成功和失败的比例大约是 1:30，失败的原因多种多样，有些啥都没做<br>对，有些作对了一部分，今天的失败案例主要讲做对了一部分的。</p>
+<h3 id="1-诺基亚-vs-iPhone"><a href="#1-诺基亚-vs-iPhone" class="headerlink" title="1.  诺基亚 vs. iPhone"></a>1.  诺基亚 vs. iPhone</h3><p>现在的诺基亚手机业务没了，只有通信业务了。2000 年左右诺基亚是手机<br>行业里最牛的品牌，直到 2007 年 iPhone 成为了最成功的产品。2000 年左右诺基<br>亚没有智能手机的概念，也没有想要做智能机，后面被 iPhone 取代了行业地位。</p>
+<h3 id="2-MPMan（韩国公司生产的第一款-MP3-播放器）vs-iPod"><a href="#2-MPMan（韩国公司生产的第一款-MP3-播放器）vs-iPod" class="headerlink" title="2.  MPMan（韩国公司生产的第一款 MP3 播放器）vs. iPod"></a>2.  MPMan（韩国公司生产的第一款 MP3 播放器）vs. iPod</h3><p>iPod 并不是最早的产品，事实上今天所有的成功案例都不是行业内的第一<br>款产品。</p>
+<h3 id="3-Kik-vs-微信"><a href="#3-Kik-vs-微信" class="headerlink" title="3.  Kik vs.微信"></a>3.  Kik vs.微信</h3><p>微信是抄袭 Kik 的，但甚至都不是第一个抄袭 Kik 的，前面还有米聊等产<br>品，但是是最成功的。</p>
+<h3 id="4-智能-ABC-vs-搜狗输入法"><a href="#4-智能-ABC-vs-搜狗输入法" class="headerlink" title="4.  智能 ABC vs.搜狗输入法"></a>4.  智能 ABC vs.搜狗输入法</h3><p>智能 ABC 在没有搜狗输入法的时代是比较好用，非常主流的，但有了搜狗<br>之后大家觉得智能 ABC 太不好用了。</p>
+<h3 id="5-IE-vs-Chrome"><a href="#5-IE-vs-Chrome" class="headerlink" title="5. IE vs. Chrome"></a>5. IE vs. Chrome</h3><p>IE 和前面的失败案例比并没有那么明显，但这个案例比较特殊，在 Chrome<br>开始做的时候，主流操作系统是 Windows，IE 是 Windows 自带的浏览器，所以<br>Chrome 要打败 IE 是非常非常难的，因为相当于消费者还要再下载一个浏览器，<br>考虑到这个情况，Chrome 是非常成功的，现在据说 IE 已经把内核改为 Chrome<br>的内核了。<br>几乎在每一个大行业里，最终取得成功的通常都不是第一家。Google 也不是<br>第一个，甚至当时的人认为 Google 的创始人没有搞清楚行业情况，他们认为搜<br>索引擎这个行业格局已定；Tesla 也不是第一个做电动车的，第一辆电动车应该<br>在 19 世纪末 20 世纪初的时候就有第一辆电动车了，Tesla 已经比最早的产品晚<br>了 100 年了。不是第一个这说明技术可能已经不是瓶颈了，而真正关键的原因是<br>产品经理。</p>
+<blockquote>
+<p>本文详尽的PDF版本加VX：xxjz305 ，回复“王慧文清华产品管理课”获取</p>
+</blockquote>
+<h2 id="第二部分：成功的产品经理"><a href="#第二部分：成功的产品经理" class="headerlink" title="第二部分：成功的产品经理"></a>第二部分：成功的产品经理</h2><h3 id="1-Neil-McElroy（经济学专业）"><a href="#1-Neil-McElroy（经济学专业）" class="headerlink" title="1. Neil McElroy（经济学专业）"></a>1. Neil McElroy（经济学专业）</h3><p>Neil 是人类历史上第一个产品经理，他是宝洁的，原来是做品牌做广告的，<br>但觉得宝洁的运营非常有问题，所以他提出应该设立一个岗位对产品的成败负责<br>任，推动设立了产品经理这个职位，后来他就成为了宝洁的总裁，后来成为了美<br>国国防部部长。</p>
+<h3 id="2-乔布斯"><a href="#2-乔布斯" class="headerlink" title="2. 乔布斯"></a>2. 乔布斯</h3><p>大家对乔布斯最耳熟能详的成功产品是 iPhone，但他和沃兹第一个搞出了个<br>人电脑 PC 并把苹果搞上市了，在苹果之前，电脑是给军界和企业用的，最强的<br>企业是 IBM，所以当时的电脑非常贵，乔布斯和沃兹觉得电脑非常好但是买不<br>起，于是他们两个自己搞出来了图形化界面也是他们率先搞出来的。<br>被苹果赶走后乔布斯投资了 Pixel，因为乔布斯认为 Pixel 做的事情非常有前<br>途，所以不断追加投资成为了 Pixel 的老板，Pixel 后来被迪士尼收购了。后来乔<br>布斯回到苹果，把苹果死马当活马医，当时 PC 行业最强的 Dell，有人让 Dell 的<br>老板给乔布斯一个建议，Dell 的老板给的建议是把苹果解散把钱还给股东，当前<br>Dell 正在干这件事。乔布斯在他整个人生里都是非常有创新力的人（Elon Mask<br>有可能会超越他，乔布斯活得太短了）。</p>
+<h3 id="3-张小龙"><a href="#3-张小龙" class="headerlink" title="3. 张小龙"></a>3. 张小龙</h3><p>张小龙的第一款产品是 Foxmail，第二款产品是 QQ 邮箱，第三款产品是微<br>信。当然现在微信已经不能算是一款产品了，现在微信里有微信支付、二维码扫<br>描等各种各样的功能，是多种不同产品功能的融合，且融合得非常好。张小龙现<br>在是国内的产品大神。按照惯例现在应该讲搜狗输入法的产品经理（马占凯），<br>但由于人在现场，就不讲了。</p>
+<h3 id="4-Pichai"><a href="#4-Pichai" class="headerlink" title="4. Pichai"></a>4. Pichai</h3><p>这个人没有乔布斯那么多成功的产品经历，但他有一个很特殊的地方。乔布<br>斯虽然工程师水平比较差，但毕竟是工程师出身，张小龙更是工程师出身，<br>Foxmail 就是他自己写的，而 Pichai 是学冶金工程的。浏览器相当于是一个小型<br>操作系统，是非常有技术含量的，所以 Pichai 做成了 Chrome 是非常有意义的一<br>件事。Pichai 现在是 Google 的 CEO，Google 是一家搜索引擎为主的公司，他们<br>还有很多其他的优秀产品，所以按常规来说应该从搜索引擎业务线里选一个人做<br>CEO，但选了 Pichai 这个 Chrome 业务线且不懂技术的人，所以 Pichai 很厉害。</p>
+<h2 id="第三部分：如何看待这门课程和产品经理这个职业"><a href="#第三部分：如何看待这门课程和产品经理这个职业" class="headerlink" title="第三部分：如何看待这门课程和产品经理这个职业"></a>第三部分：如何看待这门课程和产品经理这个职业</h2><p>老王希望自己这门课能讲得非常深入浅出，以至于高中刚毕业的学生都可以<br>听懂这门课，所以这门课没有专业上的门槛。宝洁是做日用品的，在技术上属于<br>化工行业，Neil McElroy 是学经济学的，所以做好产品经理和专业不太有关系，<br>成为一个好的产品经理最根本上是和本人的三观有关，个人的三观要和这个领域<br>相匹配，如果三观不匹配不会有太高的成就。<br>产品经理是一个需要终身学习的职业，想学一门专业的技术，一段时间后就<br>只用好这门技术，或者专业能力只局限在一个领域，就不容易做好产品经理。产<br>品经理是一个跨领域的专业，需要解决很多新的问题，如果固化自己的知识体系<br>和发展方向，就不太可能在产品经理这个领域有太高的成就。<br>产品经理这个岗位是强专用性和强通用性同时存在的。专用性上，例如电商<br>产品经理和通讯产品经理的专业差别很大，再比如说腾讯作为一个整体产品很成<br>功，但短视频和信息流是腾讯投了很多人和钱和精力也做不好，做得好的是字节<br>跳动和快手，这说明腾讯这家公司产品经理的专用性可能不适用于短视频&#x2F;信息<br>流。在一个领域很成功的产品经理换一个领域，他的工作方法可能就完全不灵了。<br>通用性也是很强的，例如 Neil 做肥皂和做国防部长，这两件事差别很大，但<br>如果产品经理能掌握其中最关键的点，就能快速上手其他的行业，这门课主要讲<br>通用性的东西，这门课讲能在互联网行业里通用的东西，争取做到讲什么行业都<br>能用到的东西。产品经理最核心的能力是关于方法论的，如果能掌握正确的方法<br>论，那就具有了跨领域的通用性。<br>职业产品经理 vs.创业产品经理。这是老王自创的概念，刚才说的这些成功<br>的产品经理都是创业产品经理。以美团为例，全公司有 2000 个产品经理，外卖<br>业务上有 300 多个产品经理，产品经理也分很多级别，不同的产品经理的差别很<br>大，负责整个外卖业务成败的头头产品经理是“创业产品经理”，“职业产品经理”<br>指的是下面具体做细分功能的产品经理，大部分人是从职业产品经理开始的，少<br>数人是由于某些特殊的原因一开始做的就是创业产品经理，比如老王。这两类产<br>品经理需要的能力有一定的差别，例如产品经理需要写的四大文档，老王都不会<br>写，但职业产品经理如果不会写就比较难做。但这两类不应该过度区分，即使一<br>开始是职业产品经理，也应该从第一天就具备创业产品经理的思维方式，即职业<br>产品经理的技能+创业产品经理的思维方式。这门课主要讲创业产品经理相关的<br>东西，稍微靠谱一点的公司在职业产品经理技能的培训上都还不错。<br>老王大学期间成绩不太好，部分原因是不知道这些课有啥用，尤其是线性代<br>数，因此当时就比较迷茫。所以老王对自己这门课的第一个期望是让大家提起对<br>产品的兴趣。老王看过菲利普科特勒的《营销管理》，面试的时候发现候选人 2&#x2F;3<br>读过这本书，但这些人基本不会去应用这本书里的知识，大部分人会说这就是个<br>教材，不实用，老王认为《营销管理》这本书牛在基本涵盖了营销的各个领域的<br>完整的一本书，但由于它太全了，所以对每个知识点的讲解不够深，无法把知识<br>点和现实工作结合起来。所以老王对这门课的第二个期望是，不会把所有的理论<br>都拿出来讲，只会讲很重要且大家能听懂的内容且大家听完觉得有用的东西，如<br>果自己希望能在某一个感兴趣的方向上进一步学习的话，会提供一个适合大家入<br>门的书单，可以自行阅读。书单上的东西全不讲，PPT 里也基本只有一个标题，<br>主要的东西都在老王的脑袋里，所以要尽量来听课。<br>如果这门课啥都没记住，就记住一句话就行了：产品经理是离 CEO 最近的<br>职位，但前提是你要有做创业产品经理的心态和思维。</p>
+<h2 id="第四部分：推荐书单"><a href="#第四部分：推荐书单" class="headerlink" title="第四部分：推荐书单"></a>第四部分：推荐书单</h2><p>书单和这门课的内容主要是老王揣摩的学生们的认知边界上的东西（介于懂<br>和不懂之间），而不是老王自己认知边界的东西，尽量让大家能看懂。</p>
+<h3 id="1-The-Paypal-Wars（支付战争）"><a href="#1-The-Paypal-Wars（支付战争）" class="headerlink" title="1. The Paypal Wars（支付战争）"></a>1. The Paypal Wars（支付战争）</h3><p>每家公司成功后都有公司写传记，美团的传记叫《九败一胜》，不推荐阅读，<br>《腾讯传》也不推荐阅读。很多传记不好的原因是：1）大部分公司的传记都是<br>用来宣传的而非传递知识的；2）很多公司传记都是外面的人写的，作者不知道<br>里面发生了什么事，包括社会上传的美团的很多事都是瞎说。而推荐这本书的原<br>因是：1）作者是在里面工作过的，所以有些事情是他真实经历过的；2）这本书<br>出版的时候 Paypal 已经卖掉了，情感包袱啥的都没有了，否则一个公司总有 Ugly<br>的事；3）这本书里面很多人后面都非常成功， Elon Mask 是 x.com 的创始人但<br>在这本书里却是一个负面形象，我们现在在其他的信息源里已经很难看到 Elon<br>Mask 成名前的负面评价了，Peter Thiel 也在这本书里，是 Facebook 的天使投资<br>人，在硅谷 Paypal Gang 是个势力很大的团伙，包括 Linkedin 的创始人，但他们<br>在做 Paypal 的时候都不是非常老练。</p>
+<h3 id="2-引爆流行"><a href="#2-引爆流行" class="headerlink" title="2. 引爆流行"></a>2. 引爆流行</h3><p>这本书里面有些知识点是错的，但这本书比较细致地讲述了一些能广为流传<br>的产品的成功要素，有些事看着微小但影响力很大，用了很多例子来解释产品、<br>产品的特征，以及产品的迭代为什么能被消费者接受和流行，而大部分讲营销的<br>书不关注产品是如何变化的。这并不是一本产品经理的书，就是一本流行书，但<br>例子比较鲜活，不深但挺好。</p>
+<h3 id="3-精益创业"><a href="#3-精益创业" class="headerlink" title="3. 精益创业"></a>3. 精益创业</h3><p>精益创业讲的就是如何让验证成败的速度快成本低，无论哪个行业都有试错<br>周期，如果能把自己的试错周期搞得比别人短的话，那你就将获得巨大的优势。<br>现在正在发生的一个革命是电动车革命，一个重要因素是软件可以在线升级，燃<br>油车的软件要升级必须到 4S 店去，一个软件可能一年才升级一个版本，而现在<br>的特斯拉只要有信号有电，一晚上可能就升级完了。<br>精益创业这件事不仅在创业里，也可以应用在工作和生活中，如果你能做到<br>迭代周期比别人短，你就获得了巨大的竞争优势。</p>
+<h3 id="4-创新者的窘境"><a href="#4-创新者的窘境" class="headerlink" title="4. 创新者的窘境"></a>4. 创新者的窘境</h3><p>作者写了一个系列 3 本书：《创新者的窘境》、《创新者的解答》、《创新者的<br>基因》，最好的是第二本，但不推荐，因为第二本是面向有一定规模之后要做新<br>业务的企业。这本书里讲的很多例子非常鲜活，硬盘行业迭代速度非常快，另外<br>硬盘行业里每一个被颠覆的公司都不是因为技术被颠覆的，大公司被颠覆的时候<br>这些新技术他们都是有的。这本书对成败原因的挖掘非常好，不仅讲了产品本身，<br>还讲了市场需求的变化和内部的组织情况，有时候大公司虽然有资源和技术，但<br>他的组织决定了他做不成这件事，比如像诺基亚。</p>
+<h3 id="5-《零售的哲学》"><a href="#5-《零售的哲学》" class="headerlink" title="5. 《零售的哲学》"></a>5. 《零售的哲学》</h3><p>《创新者的窘境》和 《精益创业》这样的书适合入门，当你到了一定阶段<br>后就可以不读了，但这本书从入门到大成都可以读，不管是入门的产品经理还是<br>资深的产品经理，读了这本书都会觉得有收获，在不同段位的时候能读懂的东西<br>不一样。<br>这本书的作者是日本 711 的创始人铃木敏文写的，老王认为这是零售行业最<br>好的书，里面有很多很经典的东西。在 711 发展的过程中有很多事前争议很大，<br>事后被认为是很正确的决策，里面花了大量篇幅讲他们当时是如何做决策的。</p>
+<h2 id="第五部分：规模效应"><a href="#第五部分：规模效应" class="headerlink" title="第五部分：规模效应"></a>第五部分：规模效应</h2><p>规模效应基本上是商业世界里的万有引力，哪些生意能做大哪些生意本质上<br>就是做不大，一个非常重要的要素是规模效应。规模效应的定义有，但放在今天<br>已经严重过时了，老王认为今天的规模效应是，销售&#x2F;用户量&#x2F;客户量足够大之后<br>（与规模小的竞争对手比）所产生的 i)用户体验优势以及 ii)成本优势，具体是成<br>本优势还是体验优势取决于具体生意模式。<br>第一个层面是不同的生意本身具备不同的规模效应，有些生意天生就做不大；<br>第二个层面是在同一个生意内部的竞争，竞争对手之间谁能率先抓住那些有规模<br>效应的要素，谁就更有希望因为规模效应起作用（成本低或用户体验好）而赢得<br>竞争。所以规模效应是决定商业竞争成败的高权重要素。</p>
+<h3 id="1-规模效应曲线的形状"><a href="#1-规模效应曲线的形状" class="headerlink" title="1. 规模效应曲线的形状"></a>1. 规模效应曲线的形状</h3><p>所以这涉及到哪些生意是有规模效应的，总的来说，和人的个体的创意关系<br>很大的就没什么规模效应，不同生意形态的规模效应有大有小，有些是下面的 A<br>曲线（指数增长），有的是 B 曲线（线性增长），有的是 C 曲线（对数增长）。<br>A 曲线最典型的是网络效应，有网络效应的一个例子是互联网本身，公式是<br>互联网的价值和节点数的平方成正比。有网络效应的生意最典型的例子是社交网<br>络，微信是一个非常典型的网状结构，一个生意有没有规模效应是决定这个生意<br>能做到多大和做到最后有没有竞争对手的重要因素，比如微信就基本没有竞争对<br>手，这种生意是很可怕的，行业里只会有一家不会有第二家。国内也有 QQ 作为<br>和微信类似的产品存在。QQ 的存在涉及到另一个要素：年轻人在 QQ 里和在微<br>信里的行为可能完全不一样，文化隔阂导致了这是 2 张社交网络，所以其实在不<br>同的市场里，解决不同的需求。一个重要的概念是 Critical Mass。<br>C 曲线，随着规模的上升，规模到了一个水平后规模效应的增长变缓了，有<br>这样曲线的生意一般具有“双边网络且同边负向竞争”，外卖和淘宝是比较典型<br>的双边网络，它不是完全节点的网络，但不见得所有的双边网络都存在负向竞争，<br>例如淘宝的供给非常充分接近无限供给，一个用户买一个商品不会影响另一个用<br>户的购买，但你打个车对旁边的人就是有影响的，所以打车就是双边的同边负向<br>竞争。外卖的规模效应也非常有限，叫个外卖周围有 100 个骑手和有 1000 个骑<br>手相比，送餐速度并不见得快很多，一般来说消费者点外卖有一个心理预期，达<br>到了就可以了，再快也不见得就有意义，所以规模达到一定程度后用户体验和成<br>本不会有更大的改善了，所以就是 C 曲线。<br>B 这条线是淘宝，每多一个用户淘宝都能接纳，淘宝就增加一点价值，但用<br>户和用户之间没啥联系，所以淘宝的价值是随着规模线性上升的。这解释了很多<br>问题，淘宝做到今天它的竞争对手是在变多的，你已经做的这么大了还有竞争对<br>手不断进来这就说明了你的规模效应不够强，没有在成本或体验上和后进者拉开<br>巨大的差距。再看外卖，尽管外卖美团今天做得这么辛苦这么努力，饿了么还在，<br>就是因为外卖的规模效应不够强，饿了么和美团其实产品是非常同质化的，这种<br>情况下行业里还有 2 家就说明了这个生意的规模效应不够强。</p>
+<h3 id="2-规模效应的-Scope"><a href="#2-规模效应的-Scope" class="headerlink" title="2. 规模效应的 Scope"></a>2. 规模效应的 Scope</h3><p>刚刚说的是曲线的形状，还涉及到规模效应是在多大的 scope 里（多大范围<br>内）起作用。比如说全球型的规模效应，就是在中国和在美国有一个用户都会产<br>生正向的用户体验；如果是一个城市型的规模效应，也就是说你在北京有一个商<br>家和在上海有一个商家，一点关系都没有，这就是城市型的；有些是全国型的规<br>模效应，有些是蜂窝型的，蜂窝型的规模效应就终于轮到外卖了，也就是在清华<br>的占有率能达到 90%和北大没啥关系，这就是外卖这个业务的悲催之处，你在一<br>个地方做成了，在下一个地方依旧要打巷战。<br>所以有些生意是有全球型的规模效应的，比如 Whatsapp 和 Messager，其实<br>微信也有，只不过被语言和文化的隔阂阻挡了，但即使如此美国要封禁微信也说<br>明了微信的全球规模效应。全国型的规模效应的典型例子是淘宝，乌鲁木齐的用<br>户也可以买浙江的商品，所以淘宝这个生意，你想龟缩在一个城市里防守是完全<br>不可能的，不存在你守着一个区域的可能性，你要和淘宝打一场仗就需要全国开<br>打，全国开打的问题就是全国烧钱，进入壁垒就很高。城市型规模效应的典型生<br>意是打车和团购，一个清华的同学是有可能团购一个国贸的服务去消费的，也有<br>可能打车去国贸，这就是城市型的结构。最后是外卖，这是蜂窝型的结构。<br>蜂窝型的结构带来的问题是，对手可以针对你这个蜂窝来打，一个蜂窝一天<br>销售额 10 万差不多了吧，要在一个 10 万销售额规模的蜂窝里烧钱，也烧不了多<br>少钱，虽然曲线是那个样子，但 scope 小决定了规模效应起作用的范围小，这又<br>进一步决定了对一个强竞争对手来说，就可以按单元来烧钱，一个蜂窝一个蜂窝<br>来打，所以这种仗这种生意的防御就很难。这种蜂窝型或城市型的生意进攻也很<br>难，就是说即便你是领先者，要进攻对方的优势区域也要一个地方一个地方进行<br>巷战，这就决定了这种生意的竞争周期很长，举个例子，团购这个业务是 2010<br>年起步做的，2011 年底美团就成为了行业第一，很多同行因为没钱而倒下了，即<br>便如此，到 2014 年美团在厦门这个城市仍然不是市占率第一，因为这个城市是<br>独立起作用的，这个城市的商家和消费者就在拉手或糯米的平台上。</p>
+<h3 id="3-规模效应曲线的参数"><a href="#3-规模效应曲线的参数" class="headerlink" title="3. 规模效应曲线的参数"></a>3. 规模效应曲线的参数</h3><p>还有一个是规模效应的参数，也就是说即便是同一类型的曲线也有参数大小。<br>在 2010 年的时候还是 MySpace 比 Facebook 的流量更大。听起来这和规模<br>效应的曲线形状是相悖的，这就涉及到了规模效应的参数这个话题。MySpace 和<br>Facebook 有一个根本差别，是 MySpace 做陌生人的社交关系，Facebook 做的是<br>熟人社交网络，虽然都具备网络效应，但这两个生意的规模效应参数有非常明显<br>的差别，具体体现在，Facebook 每做一个学校就分析这个学校内用户在 Facebook<br>上和在 MySpace 上的行为差别，结果发现每个学校里用户活跃度就都比在<br>MySpace 上的活跃度高，原因是 Facebook 做的是真实好友的关系，不管是中国<br>人还是美国人，陌生人社交的技能都是非常差的，也就是说无论借助什么工具，<br>大部分人的陌生人社交都会失败，而熟人社交大家都会。<br>最后一个话题，管理是反规模效应，那为什么很多公司还要管那么多人呢，<br>因为业务本身有规模效应，业务的强规模效应抵消了管理的反规模效应的副作用。</p>
+<h2 id="美团的-Strategy-美团为什么收购摩拜"><a href="#美团的-Strategy-美团为什么收购摩拜" class="headerlink" title="美团的 Strategy   美团为什么收购摩拜"></a>美团的 Strategy   美团为什么收购摩拜</h2><p>最后还是要讲一下美团的 Strategy，美团的主 APP 有 2 个，美团和大众点<br>评。这两个 APP 里有很多功能是重合的，比如订酒店、看电影、外卖、餐饮团<br>购、其他生活服务。<br>管理这么多业务难道就没有反规模效应吗？有，而且还很大。道理很简单，<br>如果一个人能管好上述的任何一个业务，他为什么不去创业呢，尤其是王兴和王<br>慧文这两个人非常喜欢骂人，而且中国现在的资本市场还处于资本过剩的状态。<br>既然管理有反规模效应，那一定要确保业务本身有强规模效应，这就涉及到美团<br>非常重要的战略，就是平台战略，从 2013 年用到了 2018 年。<br>这个战略为什么是行得通的？第一，当你的 APP 里有更多服务的时候，你<br>的用户获取成本是下降的，这在互联网行业里是一个非常重要的成本，今天 APP<br>的推广一个主要的方式是手机预装，按每个预装付钱，如果预装了 APP 用户却<br>没有用的话，这个钱就白付给手机厂商了，如果一个 APP 里只有一个功能的话，<br>用户获取成本就很高了，反过来用户获取成本就大幅下降且用户使用的频率就大<br>幅上升了，当一个用户使用的频率上升后留存率也上升了，留存率上升之后 Life<br>Time Value 也上升了。而 LTV 的上升也就意味着可接受的用户获取成本也上升<br>了，原来 LTV 是 100 假如用户获取成本是 10，现在 LTV 提高到了 500 那么可<br>接受的用户获取成本也上升了（形成正循环，也形成了高频打低频），这也是美<br>团收购摩拜单车的逻辑，共享单车这个业务赚不了多少钱，经营成本挺高的，但<br>这对于美团来说一个是获取用户的业务，所以收购摩拜是为了获客，当一个客户<br>LTV 够高的时候美团已经狂野到做一个业务来获客了，所以专车团队专门就是<br>来获客的。当一个行业各方面因素综合起来有可能成为另一个行业的获客手段的<br>时候，你还指望这个行业能赚钱吗？<br>一个很重要的规模效应，互联网行业里存在用户规模效应，当你的用户规模<br>足够大的时候，在今天这个大数据个性化时代，用户本身就变成了资产，成为了<br>可以反复再生的资源。上一代 90 年代左右的时候，的主流商业规律是每个公司<br>应该专注，而不要做多样化集团化，但今天大的互联网公司没有专注的，因为由<br>于互联网行业里有太多强规模效应了，这导致不专注也不要紧。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/17/%E4%BA%A7%E5%93%81/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%BB%8F%E5%B8%B8%E8%AE%BF%E9%97%AE%E7%9A%84%E7%AB%99%E7%82%B9%E6%8E%A8%E8%8D%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/11/17/%E4%BA%A7%E5%93%81/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%BB%8F%E5%B8%B8%E8%AE%BF%E9%97%AE%E7%9A%84%E7%AB%99%E7%82%B9%E6%8E%A8%E8%8D%90/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-11-17 21:30:27" itemprop="dateCreated datePublished" datetime="2021-11-17T21:30:27+08:00">2021-11-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="🌟产品经理经常访问的网站推荐"><a href="#🌟产品经理经常访问的网站推荐" class="headerlink" title="🌟产品经理经常访问的网站推荐"></a>🌟产品经理经常访问的网站推荐</h1><p>作为产品经理，经常逛一些比较好的网站，或使用一些效率高的工具，于是整理经理常用的一些网站。</p>
+<h3 id="常用工具"><a href="#常用工具" class="headerlink" title="常用工具"></a><strong>常用工具</strong></h3><p><strong>Axurehub资源下载</strong> (<a target="_blank" rel="noopener" href="http://www.axurehub.com/">Axurehub | axure产品原型资源整合站</a>)<a target="_blank" rel="noopener" href="http://www.axurehub.com/">http://www.axurehub.com/</a> 产品经理交互设计师必备</p>
+<p><strong>Xmind</strong>(<a target="_blank" rel="noopener" href="https://www.xmind.net/">https://www.xmind.net/</a>) 国产思维导图软件</p>
+<p><strong>Teambition</strong>(<a target="_blank" rel="noopener" href="https://www.teambition.com/">Teambition | Team Collaboration Solutions</a>) 国产团队协作工具，看板式管理</p>
+<p><strong>伙伴办公</strong> (<a target="_blank" rel="noopener" href="https://www.huoban.com/">伙伴办公（原 “伙伴云表格”） - 全流程定制</a>) 强大的在线表格工具，拥有海量模板</p>
+<p><strong>石墨文档</strong> (<a target="_blank" rel="noopener" href="https://shimo.im/">石墨文档</a>) 小而美的在线文档和表格工具</p>
+<p><strong>腾讯问卷</strong> (<a target="_blank" rel="noopener" href="https://wj.qq.com/">腾讯问卷 - 免费好用的问卷调查系统, 调查问卷, 免费, 简单, 模板</a>) 腾讯出品的免费简约问卷系统</p>
+<p><strong>吐个槽</strong> (<a target="_blank" rel="noopener" href="https://tucao.qq.com/dashboard/posts">吐个槽 - 免费便捷的用户意见反馈服务平台</a>) 腾讯出品用户反馈收集平台</p>
+<p><strong>天眼查</strong> (<a target="_blank" rel="noopener" href="https://www.tianyancha.com/">https://www.tianyancha.com/</a>) 公司靠不靠谱就用天眼查搜一下</p>
+<p><strong>站长之家</strong> (<a target="_blank" rel="noopener" href="http://tool.chinaz.com/">站长工具 - 站长之家</a>) SEO 分析工具、网站信息查询</p>
+<p><strong>Alexa 中国</strong> (<a target="_blank" rel="noopener" href="http://www.alexa.cn/">Alexa 中国_网站流量全球综合排名_中文网站排行榜</a>) 网站流量全球综合排名，网站排行榜</p>
+<h3 id="原型设计"><a href="#原型设计" class="headerlink" title="原型设计"></a><strong>原型设计</strong></h3><p><strong>Axure 软件下载</strong> (<a target="_blank" rel="noopener" href="https://www.axure.com/">Prototypes, Specifications, and Diagrams in One Tool</a>) 最强大的原型图设计软件</p>
+<p><strong>Axure资源下载</strong> (<a target="_blank" rel="noopener" href="http://www.axurehub.com/">Axurehub | axure产品原型资源整合站</a>) 产品经理交互设计师必备</p>
+<p><strong>墨刀</strong> (<a target="_blank" rel="noopener" href="https://modao.cc/">墨刀 - 强大易用的原型设计与协同工具</a>) 国产原型设计工具</p>
+<p><strong>Sketch 中文教程</strong> (<a target="_blank" rel="noopener" href="http://www.sketchcn.com/sketch-chinese-user-manual.html">Sketch 中文用户手册</a>) Sketch 官方中文教程</p>
+<p><strong>Sketch</strong>(<a target="_blank" rel="noopener" href="https://www.sketchapp.com/">The digital design toolkit</a>) 简单、高效的 UI 设计软件</p>
+<h3 id="设计规范"><a href="#设计规范" class="headerlink" title="设计规范"></a><strong>设计规范</strong></h3><p><strong>苹果设计规范</strong> (<a target="_blank" rel="noopener" href="https://developer.apple.com/cn/design/">设计 - Apple Developer</a>) IOS 应用的设计规范</p>
+<p><strong>谷歌设计规范</strong> (<a target="_blank" rel="noopener" href="https://material.io/design/introduction/%3Fhl%3Dzh-cn">Introduction</a>) 适用于网页设计跟 APP 设计</p>
+<p><strong>蚂蚁设计规范</strong> (<a target="_blank" rel="noopener" href="https://ant.design/index-cn">A UI Design Language</a>) 阿里巴巴蚂蚁金服的设计规范</p>
+<p><strong>优设网</strong> (<a target="_blank" rel="noopener" href="https://www.uisdc.com/">优秀设计联盟 - SDC - 优设网 - 设计师交流学习平台 - 听讲座，聊设计，找素材，尽在优设网</a>) 设计师交流学习平台</p>
+<p><strong>UI 中国</strong> (<a target="_blank" rel="noopener" href="http://www.ui.cn/">UI 中国 - 专业用户体验设计平台</a>) 人气最高的图形界面交互设计平台</p>
+<p><strong>安卓设计规范</strong> (<a target="_blank" rel="noopener" href="https://developer.android.com/design/index.html">https://developer.android.com/design/index.html</a>) 安卓官方设计指南</p>
+<p><strong>微软设计指南</strong> (<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/design">Microsoft Design</a>) 微软官方设计指南</p>
+<p><strong>屏幕尺寸对照表</strong> (<a target="_blank" rel="noopener" href="https://material.io/devices/">https://material.io/devices/</a>) 谷歌出品的各种设备屏幕对照表</p>
+<h3 id="产品社区类"><a href="#产品社区类" class="headerlink" title="产品社区类"></a><strong>产品社区类</strong></h3><p><strong>人人都是产品经理</strong> (<a target="_blank" rel="noopener" href="http://www.woshipm.com/">人人都是产品经理 | 产品经理、产品爱好者学习交流平台</a>) 最活跃的产品经理交流社区</p>
+<p><strong>PMCaff</strong>(<a target="_blank" rel="noopener" href="http://www.woshipm.com/">人人都是产品经理 | 产品经理、产品爱好者学习交流平台</a>) 最专业的产品经理交流社区</p>
+<p><strong>产品邦</strong> (<a target="_blank" rel="noopener" href="http://www.masterchat.cn/">产品邦－互联网产品经理门户网站 - 产品邦 - 帮助产品经理成长</a>) 需求文档、Axure 部件库、设计规范文档</p>
+<p><strong>产品中国</strong> (<a target="_blank" rel="noopener" href="http://www.pmtoo.com/">http://www.pmtoo.com/</a>) 报道国内外互联网创业公司，评论产品</p>
+<h3 id="资讯新闻"><a href="#资讯新闻" class="headerlink" title="资讯新闻"></a><strong>资讯新闻</strong></h3><p><strong>虎嗅网</strong> (<a target="_blank" rel="noopener" href="https://www.huxiu.com/">虎嗅网</a>) 捕获互联网每个重要时刻</p>
+<p><strong>36kr</strong>(<a target="_blank" rel="noopener" href="https://36kr.com/">36 氪 | 让创业更简单</a>) 互联网最新最热新闻资讯</p>
+<p><strong>爱范儿</strong> (<a target="_blank" rel="noopener" href="https://ifanr.com/">爱范儿 · 让未来触手可及</a>) 国内聚焦创新和科技领域的第一媒体</p>
+<h3 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a><strong>数据分析</strong></h3><p><strong>谷歌趋势</strong> (<a target="_blank" rel="noopener" href="https://trends.google.com/trends/">https://trends.google.com/trends/</a>) 了解世界各地的用户在搜索什么</p>
+<p><strong>Similarweb</strong>(<a target="_blank" rel="noopener" href="https://www.similarweb.com/">https://www.similarweb.com/</a>) 查看全球网站排名和流量分析</p>
+<p><strong>西瓜数据</strong> (<a target="_blank" rel="noopener" href="http://data.xiguaji.com/">西瓜数据 - 公众号大数据服务商</a>) 微信公众号数据分析</p>
+<p><strong>友盟</strong> (<a target="_blank" rel="noopener" href="https://www.umeng.com/">【友盟 +】全球领先的第三方全域数据服务商</a>) App 统计和分析工具</p>
+<p><strong>谷歌统计</strong> (<a target="_blank" rel="noopener" href="https://marketingplatform.google.com/about/">https://marketingplatform.google.com/about/</a>) 全球最大的网站统计和分析工具</p>
+<p><strong>百度指数</strong> (<a target="_blank" rel="noopener" href="http://index.baidu.com/%23/">百度指数</a>) 以百度海量网民行为数据为基础</p>
+<p><strong>AppAnnie</strong>(<a target="_blank" rel="noopener" href="https://www.appannie.com/cn/">App Annie - 应用分析和应用数据业界标杆</a>) 全球领先的 App 市场数据供应商</p>
+<h3 id="行业报告"><a href="#行业报告" class="headerlink" title="行业报告"></a><strong>行业报告</strong></h3><p><strong>易观智库</strong> (<a target="_blank" rel="noopener" href="https://www.analysys.cn/">易观 - 数据驱动精益成长</a>) 数据分析平台，涵盖行业报告、APP 数据等</p>
+<p><strong>艾瑞网</strong> (<a target="_blank" rel="noopener" href="http://www.iresearch.cn/">艾瑞网_互联网数据资讯聚合平台</a>) 互联网数据资讯聚合平台</p>
+<p><strong>如果你有更好的网址，也欢迎在评论区留下网站名和网址～</strong></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/01/%E4%BA%A7%E5%93%81/2022/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/01/%E4%BA%A7%E5%93%81/2022/" class="post-title-link" itemprop="url">产品原型作品整理-2022</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-01 21:23:00" itemprop="dateCreated datePublished" datetime="2020-02-01T21:23:00+08:00">2020-02-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-02-17 22:38:31" itemprop="dateModified" datetime="2022-02-17T22:38:31+08:00">2022-02-17</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>以下为本人整理近几年部分项目的链接，便于查阅。</p>
+<h2 id="作品集整理-网页版"><a href="#作品集整理-网页版" class="headerlink" title="作品集整理_网页版"></a>作品集整理_网页版</h2><p>产品原型及业务流程图整理（部分）: <a target="_blank" rel="noopener" href="https://axhub.im/pro/a5f9178ab06a58c4/">点击此处 https://axhub.im/pro/a5f9178ab06a58c4(target=_blank id&#x3D;link_link)</a></p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>苏培吉_产品经理_简历及作品集下载(16.5M): <a target="_blank" rel="noopener" href="https://qiniu.btmcheck.com/susumrproject.pdf">点击这里(target&#x3D;_blank id&#x3D;link_link)</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2018/12/09/%E4%BA%A7%E5%93%81/%E7%94%A8%E6%88%B7%E9%9C%80%E6%B1%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/12/09/%E4%BA%A7%E5%93%81/%E7%94%A8%E6%88%B7%E9%9C%80%E6%B1%82/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-12-09 15:31:12" itemprop="dateCreated datePublished" datetime="2018-12-09T15:31:12+08:00">2018-12-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>#用户需求<br>用户需求&#x3D;目标用户（特征、经验）+场景+行为+体验目标</p>
+<p>##马斯洛需求层次理论<br>产品如要深入人心必是人类的需求，能够克制又有节奏的控制与满足人的这些需求，需要一定的能力，好的产品用户使用它习惯它，让它成为生活必需品，渐渐地渗透在你的方方面面，让你离不开它。<br>美国心理学家马斯洛将人类需求从低到高按层次划分为五类：生理需求、安全需求、社交需求、尊重需求和自我实现需求。<br>这个理论基础在产品构建前期锁定准确的用户群体提供的有力的基础。当然我们很多时候都可以看到这些理论应用在产品中或细节上，比如微信的核心功能满足人的社交需求，某宝或某东满足人的生理或安全需求等。</p>
+<ol>
+<li>生理的需要：也称级别最低、最急迫的需要，呼吸、食物、水、衣着、居住、休息、医疗、性生活等；</li>
+<li>安全的需要：同样属于较低层的需要，人身安全、稳定、依赖、保护、秩序、法律等安全感；</li>
+<li>社交的需要：属于较高层的需要，聚会、交往、友情、爱情、关怀等；</li>
+<li>尊重的需要：属于较高层的需要，自尊心、自豪感、自主性、权力、威望、荣誉、地位等；</li>
+<li>自我实现的需要：是最高层的需要，成功、幸福、梦想等。<br>超自我实现，马斯洛晚期时提出，当人满足了自我实现的需求时，所出现短暂的“高峰经验”，表现的很“忘我”的状态，多发生在艺术家、音乐家等。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/07/23/%E4%BA%A7%E5%93%81/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/07/23/%E4%BA%A7%E5%93%81/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-07-23 14:11:43" itemprop="dateCreated datePublished" datetime="2017-07-23T14:11:43+08:00">2017-07-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>#产品经理<br>站在业务角度去组织、协调、管理。</p>
+<ul>
+<li>评估产品机会</li>
+<li>制定产品目标和策略</li>
+<li>规划产品的发展路线图</li>
+<li>定义产品需求和业务目标</li>
+<li>监督需求的实现</li>
+<li>关注市场反馈并作出及时调整</li>
+<li>维护不同团队的沟通<br>目的是让产品实现长期的用户满意，保持市场竞争优势，把产品的商业价值发挥到最大。</li>
+</ul>
 
       
     </div>
@@ -255,10 +789,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -269,17 +803,21 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+  <p class="site-author-name" itemprop="name">苏北</p>
+  <div class="site-description" itemprop="description">产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -309,9 +847,9 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">苏北</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
