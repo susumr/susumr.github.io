@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="oyyXIUs8Fa">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.susumr.cc","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"请输入搜索内容","hits_empty":"暂无你要搜索的内容: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="#交互设计在互联网中，乃至其他行业中，设计为解决问题的方式之一，而更具体的说以人为导向的设计活动。所以在创造一个产品时需要理解用户的期望、需要、动机以及使用情境；理解商业、技术以及其他制约条件；进而创造出具有‘形式、内容、行为’，且可行性可用户优良的实现商业目的的产品。产品的交互设计不是凭空猜测。用户的目标是交互设计实践的基础，在此基础上进行协作、技术、工具、商业等过程。##目标导向设计 旨在处理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="目标导向设计">
+<meta property="og:url" content="https://www.susumr.cc/2024/01/17/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E7%9B%AE%E6%A0%87%E5%AF%BC%E5%90%91%E8%AE%BE%E8%AE%A1/index.html">
+<meta property="og:site_name" content="苏北的产品知识库">
+<meta property="og:description" content="#交互设计在互联网中，乃至其他行业中，设计为解决问题的方式之一，而更具体的说以人为导向的设计活动。所以在创造一个产品时需要理解用户的期望、需要、动机以及使用情境；理解商业、技术以及其他制约条件；进而创造出具有‘形式、内容、行为’，且可行性可用户优良的实现商业目的的产品。产品的交互设计不是凭空猜测。用户的目标是交互设计实践的基础，在此基础上进行协作、技术、工具、商业等过程。##目标导向设计 旨在处理">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-01-17T14:08:55.000Z">
+<meta property="article:modified_time" content="2023-12-30T03:56:26.359Z">
+<meta property="article:author" content="苏北">
+<meta property="article:tag" content="交互设计">
+<meta property="article:tag" content="设计方法">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.susumr.cc/2024/01/17/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E7%9B%AE%E6%A0%87%E5%AF%BC%E5%90%91%E8%AE%BE%E8%AE%A1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>目标导向设计 | 苏北的产品知识库</title>
+  
+
+
+
+
+  <script>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+    gio('init', '3a83afa2bad5b532d491454b380f874b', {});
+    gio('send');
+  </script>
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="苏北的产品知识库" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">苏北的产品知识库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">终身学习，持续输出</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="algolia-results">
+  <div id="algolia-stats"></div>
+  <div id="algolia-hits"></div>
+  <div id="algolia-pagination" class="algolia-pagination"></div>
+</div>
+
+      
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.susumr.cc/2024/01/17/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E7%9B%AE%E6%A0%87%E5%AF%BC%E5%90%91%E8%AE%BE%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          目标导向设计
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-01-17 22:08:55" itemprop="dateCreated datePublished" datetime="2024-01-17T22:08:55+08:00">2024-01-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-30 11:56:26" itemprop="dateModified" datetime="2023-12-30T11:56:26+08:00">2023-12-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A4%E4%BA%92/" itemprop="url" rel="index"><span itemprop="name">交互</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>#交互设计<br>在互联网中，乃至其他行业中，设计为解决问题的方式之一，而更具体的说以人为导向的设计活动。所以在创造一个产品时需要理解用户的期望、需要、动机以及使用情境；理解商业、技术以及其他制约条件；进而创造出具有‘形式、内容、行为’，且可行性可用户优良的实现商业目的的产品。<br>产品的交互设计不是凭空猜测。用户的目标是交互设计实践的基础，在此基础上进行协作、技术、工具、商业等过程。<br>##目标导向设计<br> 旨在处理并满足用户目标和动机，为目标导向设计。</p>
+<span id="more"></span>
+<p>目标导向原因：用户使用产品都是带有目的，要理解用户为什么这么做，来满足用户目标，有目标导向也可以使团队做决策时更明晰而不是凭空猜想。<br>##实现目标导向步骤<br>· 研究：定性定量分析、用户访谈、竞品分析、用户及应用领域研究<br>· 建模：建立人物角色和使用情景<br>· 定义需求：结合场景和人物划定业务需求<br>· 定义框架：定义设计结构和流程<br>· 细化：验证场景细节、行为形式和内容<br>· 支持：开发等技术要求<br>##三种模型<br>· 实现模型：软件是如何工作的模型<br>· 心理模型：用户认为软件是如何工作的<br>· 表现模型：设计者将软件运行机制展示给用户的方式<br>模型间的关联：表现模型越接近心理模型，用户就觉得越容易使用和理解，目标导向的交互反映了用户的心理模型。<br>##视觉界面设计组成要素<br>1、形状 我们习惯于通过外形轮廓来辨识物体。<br>2、尺寸 屏幕上的某个物体相对于其他物体的大小，在一群相似物体中，较大的物体更容易引起我们的注意。<br>3、值 物体的明亮暗度程度，我们总会用一个数量值来衡量，更容易吸引人们注意。<br>4、颜色 颜色的不同可以快速引起我们的注意，在一些专业领域中，颜色有着特殊的意义。<br>5、方位 当我们又和方向有关的信息需要传达时，方位是个很有用的变量。<br>6、纹理 物体粗擦光滑，分辨纹理需要很强的注意力，可以用来作为重要的提示。<br>7、位置 屏幕上的阅读顺序可以帮助我们来顺序地定位元素。<br>##交互界面设计原则<br>运用视觉属性将元素分组，创造清晰的层次结构；<br>在组织上的每一层都提供视觉结构；<br>创建逻辑路径、对称和平衡；<br>图像的运用要适当紧凑、一致，并且要适当考虑使用环境；<br>全面有目的地把风格和功能结合起来；<br>避免视觉噪声和混乱，保持简单；<br>##视觉信息设计原则<br>· 加强视觉对比；<br>· 显示因果关系；<br>· 显示多个变量；<br>· 在一个显示中结合文本、图形及数据；<br>· 确保内容的品质、相关性和完整性；<br>· 在相邻空间上显示事物，而不是按时间堆积；<br>· 可量化的数据需要量化；<br>这些应用在广告图的设计中，以及页面信息内容中，好的设计遵循着一定的设计原则。<br>#实现目标导向设计步骤简述<br>##一、【研究】<br>常用的方法有调查问卷、竞品分析、现场观察、以及用户访谈等，最终得到用户的基本要素。<br>即：1.目的 2.行为 3.问题 4.态度 5.资质 6.环境 等；<br>进行进一步分析后，分类整理，以为后续建模做准备<br>##二、【建模】<br>即建立用户模型，虚构出的一个用户用来代表一个用户群。‘用户体验设计’则是以用户为中心，进行目标导向型设计。<br>一个产品通常只服务几个目标用户群，一般来说通过研究确定用户群，以及各方面的资料，通过整理、分析等不同方法进行合成、区分出目标用户的详细信息以及真实目标，通过研究比对得出各个目标群的优先级以及设计目标。<br>##三、【需求定义】<br>需求定义是一个过程，用来解决理想使用者解决问题的整个环节，进而得出产品所必备的能力。产品最终是解决用户的问题，需要结合用户的生活以及使用环境，帮助其实现最终目标，分析出产品所必备的功能需求、数据需求、使用者心理模型、设计需求、产品前景、商业需求、以及技术需求。此部分可以拟定文档分析。<br>##四、【框架定义】<br>即定义产品的信息功能以及视觉框架的过程，按照交互原则以及设计原理把之前的定义的需求转化为设计草图形式和行为描述，得到交互框架，此部分优先考虑逻辑层面以及整体信息框架上的问题，接着结合按照用户使用行为细化功能信息，以及进一步进行视觉美化交互框架（即此部分可优先考虑板式、配色、风格等方面）。<br>##五、【设计细化】<br>此部分更多的是关注设计细节与实现。即设计类型风格、尺寸、图标等更为具体的元素，此部分最终是设计文档、形式、以及规范。<br>##六、【开发支持】<br>主要是结合技术制约条件验证设计，及平衡周期、技术难题、可行性与可用性等因素，保证产品照常进行下来调整设计和保证设计的完整性。<br>##【实现模型、表现模型、用户心理模型】</p>
+<ol>
+<li>实现模型描述的是机器和程序实际是如何工作的。（程序思维）</li>
+<li>用户心理模型是人们在使用产品时，创造出一种认知上的简捷的解释方式。（用户思维）</li>
+<li>表现模型，更多的是针对界面、交互的一种概念。（设计师，界面表现思维）<br>表现模型越接近用户心理模型，用户才会觉得产品易操作易使用，认知度更高。用户不需要理解你的软件是如何运转等逻辑，他只需要使用其完成他的目的。<br>交互原则：用户界面应该基于用户的心理模型，而不应该是基于实现模型。<br>例如：ATM转账的时候，人们建立的心理模型是钱从一张银行卡转移到了另一张银行卡，绝大多数人不会想这背后有一套非常复杂的系统，还要经过银联转接。所以如果不知道如何让产品更易用，那就将它做的更简单吧。</li>
+</ol>
+<p>#用户研究<br>##新手专家、专家和中间用户<br>大多数用户既非新手，也不是专家，而属于中间用户<br>设计原则：<br>没有人愿意停留在新手级别。<br>为中间用户优化。<br>将用户想象成非常聪明但很忙的人。<br>##定性研究<br>·【访谈利益相关者】指任何对产品设计产生影响和对产品负责的人，前期多关注他们的想法，避免后期因为不同意见和横加指责；<br>·【访谈主题专家】指产品使用领域的专家，关注他们提供建议的目标而不是建议本身，以及在复杂领域，专家用户在关于用户角色和特点的知识对规划用户研究非常关键；<br>·【访谈顾客】指做出购买决定的人，不一定都是用户，同样分析建议背后的目标（可以了解到购买的目的、碰到的问题、决策的过程、使用过程中的角色、相关领域里的问题及词汇等）；<br>·【访谈用户】产品亲自试用者，了解产品使用情境、用户的领域知识、任务、使用动机和期望、心理模型、产品问题；<br>·【用户观察&#x2F;人种学现场研究】因大多数用户不能准确评估自己的行为。尽量真实，还原用户真实使用场景，（可使用视频或音频记录，笔记本）；<br>·【文献调研】包括产品市场规划、品牌策略、市场研究、用户调查等等；<br>·【产品&#x2F;竞争性审核】竞品分析，快速了解产品当前功能范围；<br>##人种学调查：用户访谈和用户观察<br>基本方法：</p>
+<ul>
+<li>在交互发生的地方进行访谈。</li>
+<li>避免一组固定的问题。</li>
+<li>首先关注目标，任务其次。</li>
+<li>避免让用户成为设计师。</li>
+<li>避免讨论极速。</li>
+<li>鼓励讲故事。</li>
+<li>请求演示和讲解。</li>
+<li>避免诱导性的问题。</li>
+</ul>
+<p>##为用户建模：人物角色和目标</p>
+<ul>
+<li>人物角色：具有特定需要的特定个体类型设计。<br>使用人物角色的这种方式，可有效的解决设计出现的问题：弹性用户；自参考设计；以及边缘情况设计。</li>
+<li>同理心，基于人物角色的认知和情感元素来作出设计框架和细节上的决定 。<br>用户的目标是用户的使用动机。<br>诺曼在《情感化设计》中对认知处理层提到以下3个方面：</li>
+</ul>
+<ol>
+<li>本能层的设计：设计那些感官最初的感觉到的，视觉外观设计、声音设计、产品触觉设计。为情感设计，在特定情景下引起人们心理和感情上的反应，而不只是美观 。</li>
+<li>行为层的设计：可以完善用户自己的行为、暗含的假设和心理模型的产品行为（交互设计的重点） </li>
+<li>反思层的设计：为打造长期的用户产品关系，变成人们日常生活中的偶像（考虑个人与文化因素）</li>
+</ol>
+<p>##定义需求<br>需求定义回答了关于产品是什么以及要做什么的问题。框架定义则主要回答了产品行为方式和如何构建产品来满足用户目标等问题。<br>-需求定义由以下五个步骤组成：</p>
+<ol>
+<li>创建问题和愿景陈述</li>
+<li>探索和头脑风暴</li>
+<li>确定人物模型期望</li>
+<li>构建情景场景</li>
+<li>明确设计需求<br>详尽：<a target="_blank" rel="noopener" href="http://telegra.ph/%E5%AE%9A%E4%B9%89%E9%9C%80%E6%B1%82%E7%9A%84%E4%BA%94%E4%B8%AA%E6%AD%A5%E9%AA%A4%E8%AF%A6%E5%B0%BD-05-28">定义需求的五个步骤详尽 – Telegraph</a></li>
+</ol>
+<p>##可行性<br>指对过程、设计、程序或计划能否在所要求的时间范围内成功完成的确定。包含环境可行、经济可行、政策可行、技术可行、道德可行等！<br>易用性是指产品对用户来说意味着易于学习和使用、减轻记忆负担、使用的满意程度等。产品易用性好，很可能是因为产品功能少，界面简单；也可能是用户认知成本低等因素。总之，同样的产品，功能，界面和环境都相同，对于不同的用户而言，易用性也是不同的，因为用户的认知能力，知识背景，使用经验等都不同。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>苏北
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.susumr.cc/2024/01/17/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E7%9B%AE%E6%A0%87%E5%AF%BC%E5%90%91%E8%AE%BE%E8%AE%A1/" title="目标导向设计">https://www.susumr.cc/2024/01/17/交互设计/目标导向设计/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/" rel="tag"># 交互设计</a>
+              <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95/" rel="tag"># 设计方法</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/12/%E5%85%B3%E4%BA%8E%E6%96%B0%E9%9B%B6%E5%94%AE/%E5%85%B3%E4%BA%8E%E6%96%B0%E9%9B%B6%E5%94%AE/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2024/01/17/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD/" rel="next" title="交互设计专业术语">
+      交互设计专业术语 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">苏北</p>
+  <div class="site-description" itemprop="description">产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://axurehub.com/" title="https:&#x2F;&#x2F;Axurehub.com" rel="noopener" target="_blank">Axurehub</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">苏北</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">65k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">1:59</span>
+</div>
+  <div class="powered-by">
+<!--由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动 -->
+  </div>
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
+<script src="/js/algolia-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

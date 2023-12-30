@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="baidu-site-verification" content="oyyXIUs8Fa">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.susumr.cc","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"请输入搜索内容","hits_empty":"暂无你要搜索的内容: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="#交互设计站在用户的视角去洞察用户心理、分析用户需求、设计用户行为和人机用户界面。交互设计需要设计原型图，需掌握一定的排版能力、信息设计技巧及美学基础，更需要对业务需求及用户需求更深的理解，从中归纳出人机交互界面。  分析业务目标和用户体验目标 分解阻碍用户达成体验目标的关键因素 制定设计目标和策略 设计信息架构、用户操作流程、导航和UI细节 输出相关设计规范文档，建立并维护设计规范 跟踪视觉设计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="交互设计">
+<meta property="og:url" content="https://www.susumr.cc/2017/07/23/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/index.html">
+<meta property="og:site_name" content="苏北的产品知识库">
+<meta property="og:description" content="#交互设计站在用户的视角去洞察用户心理、分析用户需求、设计用户行为和人机用户界面。交互设计需要设计原型图，需掌握一定的排版能力、信息设计技巧及美学基础，更需要对业务需求及用户需求更深的理解，从中归纳出人机交互界面。  分析业务目标和用户体验目标 分解阻碍用户达成体验目标的关键因素 制定设计目标和策略 设计信息架构、用户操作流程、导航和UI细节 输出相关设计规范文档，建立并维护设计规范 跟踪视觉设计">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2017-07-23T07:22:05.000Z">
+<meta property="article:modified_time" content="2023-12-30T04:08:43.027Z">
+<meta property="article:author" content="苏北">
+<meta property="article:tag" content="交互设计">
+<meta property="article:tag" content="交互设计原则">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.susumr.cc/2017/07/23/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>交互设计 | 苏北的产品知识库</title>
+  
+
+
+
+
+  <script>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+    gio('init', '3a83afa2bad5b532d491454b380f874b', {});
+    gio('send');
+  </script>
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="苏北的产品知识库" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">苏北的产品知识库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">终身学习，持续输出</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="algolia-results">
+  <div id="algolia-stats"></div>
+  <div id="algolia-hits"></div>
+  <div id="algolia-pagination" class="algolia-pagination"></div>
+</div>
+
+      
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.susumr.cc/2017/07/23/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="苏北">
+      <meta itemprop="description" content="产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="苏北的产品知识库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          交互设计
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-07-23 15:22:05" itemprop="dateCreated datePublished" datetime="2017-07-23T15:22:05+08:00">2017-07-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-30 12:08:43" itemprop="dateModified" datetime="2023-12-30T12:08:43+08:00">2023-12-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A4%E4%BA%92/" itemprop="url" rel="index"><span itemprop="name">交互</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>#交互设计<br>站在用户的视角去洞察用户心理、分析用户需求、设计用户行为和人机用户界面。<br>交互设计需要设计原型图，需掌握一定的排版能力、信息设计技巧及美学基础，更需要对业务需求及用户需求更深的理解，从中归纳出人机交互界面。</p>
+<ul>
+<li>分析业务目标和用户体验目标</li>
+<li>分解阻碍用户达成体验目标的关键因素</li>
+<li>制定设计目标和策略</li>
+<li>设计信息架构、用户操作流程、导航和UI细节</li>
+<li>输出相关设计规范文档，建立并维护设计规范</li>
+<li>跟踪视觉设计、技术开发的实现情况</li>
+<li>优化产品可用性，持续改善用户体验<br>目的是让产品和用户之间建立有机关系，有效实现用户目标和产品目标。<span id="more"></span>
+交互设计师还要将设计的解决方案与那些重要的衡量指标（比如跳出率、退出率、转化率等等）结合起来，转换为<strong>数据价值</strong>，去帮助促使业务增长和产品发展。</li>
+</ul>
+<p><strong>有用性</strong><br>能同时满足业务目标和用户体验目标。<br><strong>可用性</strong><br>用户易于理解、学习、使用无障碍。是否能完成用户任务、效率如何、主观感受如何。</p>
+<p>尼尔森的十大可用性原则是产品设计与用户体验设计的重要参考标准，值得深入研究与运用。<br>一、状态可见原则<br>用户在网页上的任何操作，不论是单击、滚动还是按下键盘，页面应即时给出反馈。“即时”是指，页面响应时间小于用户能忍受的等待时间。<br>二、环境贴切原则<br>网页的一切表现和表述，应该尽可能贴近用户所在的环境（年龄、学历、文化、时代背景），而不要使用第二世界的语言。《iPhone人机交互指南》里提到的隐喻与拟物化是很好的实践。此外，还应该使用易懂和约定俗成的表达。<br>三、撤销重做原则<br>为了避免用户的误用和误击，网页应提供撤销和重做功能。<br>四、一致性原则<br>同一用语、功能、操作保持一致。<br>五、防错原则<br>通过网页的设计、重组或特别安排，防止用户出错。<br>六、易取原则<br>好记性不如烂笔头。尽可能减少用户回忆负担，把需要记忆的内容摆上台面。<br>七、灵活高效原则<br>中级用户的数量远高于初级和高级用户数。为大多数用户设计，不要低估，也不可轻视，保持灵活高效。<br>八、易扫原则<br>互联网用户浏览网页的动作不是读，不是看，而是扫。易扫，意味着突出重点，弱化和剔除无关信息。<br>九、容错原则<br>帮助用户从错误中恢复，将损失降到最低。如果无法自动挽回，则提供详尽的说明文字和指导方向，而非代码，比如404。<br>十、人性化帮助原则<br>帮助性提示最好的方式是：1、无需提示；2、一次性提示；3、常驻提示；4；帮助文档。<br><strong>吸引力</strong><br>打动人的细节，或者超越期望的设计（主题、动效）<br>KANO模型（基本型需求、期望型需求、兴奋型需求）<br><strong>用户体验路径</strong><br>用户在使用前、使用中、使用后的各个接触点，确保设计成为闭环。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>苏北
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.susumr.cc/2017/07/23/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/" title="交互设计">https://www.susumr.cc/2017/07/23/交互设计/交互设计/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/" rel="tag"># 交互设计</a>
+              <a href="/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/" rel="tag"># 交互设计原则</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2017/07/23/%E4%BA%A7%E5%93%81/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2017/07/23/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" rel="next" title="需求分析方法">
+      需求分析方法 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">苏北</p>
+  <div class="site-description" itemprop="description">产品经理知识库,交互设计知识库—苏北的个人知识积累站点，收录日常工作学习过程中的心得与笔记积累，开放式的提供给互联网工作者学习。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://axurehub.com/" title="https:&#x2F;&#x2F;Axurehub.com" rel="noopener" target="_blank">Axurehub</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">苏北</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">65k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">1:59</span>
+</div>
+  <div class="powered-by">
+<!--由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动 -->
+  </div>
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
+<script src="/js/algolia-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
